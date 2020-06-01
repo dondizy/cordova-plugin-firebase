@@ -1,3 +1,4 @@
+var xcode = require("xcode");
 var fs = require("fs");
 var path = require("path");
 var utilities = require("../lib/utilities");
@@ -30,7 +31,7 @@ module.exports = {
      * (dSYMs) so that Crashlytics can display stack trace information in it's web console.
      */
   addShellScriptBuildPhase: function (context, xcodeProjectPath) {
-    var xcode = context.requireCordovaModule("xcode");
+    //var xcode = context.requireCordovaModule("xcode");
 
     // Read and parse the XCode project (.pxbproj) from disk.
     // File format information: http://www.monobjc.net/xcode-project-file-format.html
