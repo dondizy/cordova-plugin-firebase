@@ -86,7 +86,7 @@ module.exports = {
      */
   removeShellScriptBuildPhase: function (context, xcodeProjectPath) {
 
-    var xcode = context.requireCordovaModule("xcode");
+    // var xcode = context.requireCordovaModule("xcode");
 
     // Read and parse the XCode project (.pxbproj) from disk.
     // File format information: http://www.monobjc.net/xcode-project-file-format.html
